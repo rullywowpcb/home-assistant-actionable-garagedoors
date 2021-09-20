@@ -1,0 +1,19 @@
+#Example Script to Send an actionable notification to your iOS device
+
+
+alias: Notify iOS that virtual garage doors are open
+sequence:
+  - service: notify.mobile_app_homeskillet #name of your iOS device
+    data:
+      message: Garage Doors are Still Open!
+      data:
+        push:
+          sound: US-EN-Alexa-Garage-Door-Opened.wav
+        actions:
+          - action: CLOSEVIRTUALDOORS
+            title: Close All Garage Doors
+            destructive: true
+          - action: KEEPOPEN
+            title: Keep Open
+mode: single
+

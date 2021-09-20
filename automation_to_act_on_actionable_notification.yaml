@@ -1,0 +1,16 @@
+## Example Automation to Respond to Mobile App Notification
+
+alias: Close Virtual Garage Doors
+description: ''
+trigger:
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: CLOSEVIRTUALDOORS  #this string is what HA looks for
+condition: []
+action:
+  - service: homeassistant.turn_off  #this could be close cover or anything really
+    target:
+      area_id: virtualgarage  # I setup a test "virtual garage" area to try and close both input booleans
+mode: single
+
