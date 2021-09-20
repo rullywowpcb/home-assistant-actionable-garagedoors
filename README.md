@@ -24,6 +24,7 @@ Once you are satisfied that it works (yay!), you can implement this with your ac
 - Make use of the `Developer Tools/Events/Listen To Events` in order to listen to mobile_app_notification_action to see if you get a response from pushing the button on your mobile device
 - Next up is to set up an Automation which sends a notification at a certain time if the doors are left open (for example every 30 minutes after sunset). You will have to implement these yourself for your own config.
 - You can swap the sound with many other choices. Check out the bundled sounds in the companion app under `App Settings/Notifications/Sounds/Bundled` for the exact filenames.
+- The "Keep Open" button sends a message to `mobile_app_notification_action` but doesn't really do anything other than make the notification go away
 
 Do check out the official resource for this here. This method has changed after 2021.5
 
