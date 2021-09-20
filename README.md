@@ -1,5 +1,5 @@
 # home-assistant-actionable-garagedoors
-## Quick excerpt of my  Home Assistant config for Actionable Notifications on my "Virtual" Garage Doors
+## Quick excerpt of my  Home Assistant config for Actionable Notifications on my "Virtual" Garage Doors. Feel free to try this out yourself on some virtual doors before you actually implement.
 
 The idea is to get something like this on your mobile:
 ![alt text](https://raw.githubusercontent.com/rullywowpcb/home-assistant-actionable-garagedoors/main/ios_notification.jpg?raw=true)
